@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-demo:ci": "ng build --deploy-url /example-multiple-directive-app/",
+    "test-demo:ci": "ng test --watch=false --code-coverage --source-map true --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
